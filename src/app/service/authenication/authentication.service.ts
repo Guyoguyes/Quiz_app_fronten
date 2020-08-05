@@ -21,7 +21,7 @@ export class AuthenticationService {
 
   //User authentication
   authenticateUser(login: Login) {
-    return this.http.post(environment.authentcationApi + 'login/', + login, this.noAuthHeader)
+    return this.http.post(environment.authentcationApi + 'login/',  login, this.noAuthHeader)
     
   }
 
