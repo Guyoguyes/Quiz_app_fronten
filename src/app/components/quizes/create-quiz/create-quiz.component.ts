@@ -7,10 +7,12 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./create-quiz.component.css']
 })
 export class CreateQuizComponent implements OnInit {
+
   title=new FormControl('');
   description=new FormControl('');
   duration=new FormControl('');
-  questions=new FormControl('');
+  questions = new FormControl('');
+  
   constructor() { }
 
   ngOnInit(): void {
