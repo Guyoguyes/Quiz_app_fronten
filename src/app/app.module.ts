@@ -34,6 +34,7 @@ import { AuthGuard } from './auth/auth.guard';
 import { ResultsComponent } from './components/quizes/results/results.component';
 
 import { AnswersComponent } from './components/quizes/answers/answers.component';
+import { CreateQuizComponent } from './components/quizes/create-quiz/create-quiz.component';
 
 // import { ComponentsComponent } from './dashboard/components/components.component';
 
@@ -53,6 +54,8 @@ import { AnswersComponent } from './components/quizes/answers/answers.component'
     ResultsComponent,
 
     AnswersComponent,
+
+    CreateQuizComponent,
 
     // ComponentsComponent
 

@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { Login } from 'src/app/models/user/login';
 import { NgForm } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -17,7 +18,8 @@ export class LoginComponent implements OnInit {
 
   constructor(private authService: AuthenticationService,
               private router: Router,
-              private flashmessages: FlashMessagesService) { }
+    private flashmessages: FlashMessagesService,
+    private fb: FormBuilder) { }
 
   loginCl: Login = {
     email: null,
@@ -29,6 +31,8 @@ export class LoginComponent implements OnInit {
       res => {
         this.authService.setToken(res['token']);
         this.router.navigateByUrl('/dashboard')
+        console.log('email');
+        
       },
       err => {
         this.flashmessages.show(err, {cssClass: 'alert-danger', timeout: 3000})
@@ -43,7 +47,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     if(this.authService.isLoggedIn()){
-      this.router.navigateByUrl('/dashboard')
+      this.router.navigateByUrl('/login')
   }
 
 }

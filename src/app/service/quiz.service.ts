@@ -38,6 +38,10 @@ export class QuizService {
     return this.http.get(environment.quizApi + "quizzes/");
   }
 
+  createQuiz(quizz) {
+    return this.http.post(environment.quizApi + "quizzes/", quizz)
+  }
+
   submitScore(answers: any) {
     return this.http.post(environment.quizApi + "attempt/", answers);
   }

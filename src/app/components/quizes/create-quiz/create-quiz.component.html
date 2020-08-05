@@ -1,1 +1,13 @@
-<p>create-quiz works!</p>
+<div>
+    <legend>Set Question</legend>
+    <label>Question :</label>
+    <textarea placeholder="The Question" id="" cols="30" rows="10" [formControl]='question'></textarea>
+</div>
+<div>
+    <legend>Set Answers</legend>
+    <input type="text" placeholder="Answer" class="form-control" [formControl]='answer1'><br>
+    <input type="text" placeholder="Answer" class="form-control" [formControl]='answer2'><br>
+    <input type="text" placeholder="Answer" class="form-control" [formControl]='answer3'><br>
+    <input type="text" placeholder="Answer" class="form-control" [formControl]='answer4'><br>
+    <input type="text" placeholder="Answer" class="form-control" [formControl]='answer5'><br>
+</div>

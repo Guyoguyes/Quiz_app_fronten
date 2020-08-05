@@ -1,20 +1,70 @@
 <br>
-<br>
-<br>
-<br>
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class=" text-center img">
-                <img src="./assets/Images/back.jpg" alt="" class="img-circle rounded-circle" id="profile" style="width: 300px; height: 300px;">
-                <p>John Doe</p>
-                <p>example@gmail.com</p>
-                <button style="background-color: 40E332; border-radius: 2px;" class="btn btn-warning"><a routerLink="/edit">Edit Profile</a></button>
-            </div>
-        </div>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container" id="dashboard">
+    <div class="area"></div>
+    <nav class="main-menu">
+        <ul>
 
-        <!-- <div class="col-md-6" style="float: right;">
+            <li class="has-subnav">
+                <a href="#home">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        Home
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a routerLink="/dashboard">
+                    <i class="fa fa-dashboard fa-2x"></i>
+                    <span class="nav-text">
+                        Dashboard
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a routerLink="/user">
+                    <i class="fa fa-user fa-2x"></i>
+                    <span class="nav-text">
+                        Profile
+                    </span>
+                </a>
+
+            </li>
+
+        </ul>
+
+        <ul class="logout">
+            <li>
+                <a routerLink="/login">
+                    <i class="fa fa-power-off fa-2x"></i>
+                    <span class="nav-text">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class=" text-center img">
+                    <img src="./assets/Images/back.jpg" alt="" class="img-circle rounded-circle" id="profile" style="width: 300px; height: 300px;">
+                    <p>John Doe</p>
+                    <p>example@gmail.com</p>
+                    <button style="background-color: 40E332; border-radius: 2px;" class="btn btn-warning"><a routerLink="/edit">Edit Profile</a></button>
+                </div>
+            </div>
+
+            <!-- <div class="col-md-6" style="float: right;">
 
             <div class="col-lg-8 col-md-8 text-center">
                 <p>About</p>
@@ -34,5 +84,5 @@
             </div>
             <div class=" col-lg-2 col-md-2 "></div>
         </div> -->
+        </div>
     </div>
-</div>

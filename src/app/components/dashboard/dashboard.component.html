@@ -1,16 +1,52 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <div class="container" id="dashboard">
-    <!-- <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a routerLink="/dashboard">Dashboard</a>
-        <a routerLink="/user">Profile</a>
-        <a routerLink="/login">Logout
-        </a>
-    </div>
+    <div class="area"></div>
+    <nav class="main-menu">
+        <ul>
 
-    <h2>Animated Sidenav Example</h2>
-    <p>Click on the element below to open the side navigation menu.</p>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+            <li class="has-subnav">
+                <a href="#home">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        Home
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a routerLink="/dashboard">
+                    <i class="fa fa-dashboard fa-2x"></i>
+                    <span class="nav-text">
+                        Dashboard
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a routerLink="/user">
+                    <i class="fa fa-user fa-2x"></i>
+                    <span class="nav-text">
+                        Profile
+                    </span>
+                </a>
+
+            </li>
+
+        </ul>
+
+        <ul class="logout">
+            <li>
+                <a routerLink="/login">
+                    <i class="fa fa-power-off fa-2x"></i>
+                    <span class="nav-text">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <div class="row">
         <div class="col-md-4">
