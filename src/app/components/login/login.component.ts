@@ -22,8 +22,8 @@ export class LoginComponent implements OnInit {
     public fb: FormBuilder) { }
 
   loginCl: Login = {
-    email: 'ceciheroku@gmail.com',
-    password: '123'
+    email: null,
+    password: null
   }
 
   onLogin(){
