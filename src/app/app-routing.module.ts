@@ -10,6 +10,7 @@ import { EditProfileComponent } from './components/dashboard/profile/edit-profil
 import { QuizComponent } from './components/quizes/quiz/quiz.component';
 import { ResultsComponent } from './components/quizes/results/results.component';
 import { AuthGuard } from './auth/auth.guard';
+import { CreateQuizComponent } from './components/quizes/create-quiz/create-quiz.component';
 
 
 
@@ -24,7 +25,8 @@ routes = [
   { path: 'user', component: UserProfileComponent },
   { path: 'edit', component: EditProfileComponent },
   { path: 'quiz', component: QuizComponent }, //, canActivate: [AuthGuard]
-  { path: 'result', component: ResultsComponent } //, canActivate: [AuthGuard]
+  { path: 'result', component: ResultsComponent },
+  { path: 'create-quiz', component: CreateQuizComponent } //, canActivate: [AuthGuard]
   
 
 ];
