@@ -19,11 +19,11 @@ export class LoginComponent implements OnInit {
   constructor(private authService: AuthenticationService,
               private router: Router,
     private flashmessages: FlashMessagesService,
-    private fb: FormBuilder) { }
+    public fb: FormBuilder) { }
 
   loginCl: Login = {
-    email: null,
-    password: null
+    email: 'ceciheroku@gmail.com',
+    password: '123'
   }
 
   onLogin(){

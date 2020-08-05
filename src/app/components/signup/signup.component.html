@@ -50,14 +50,14 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <div class="wrapper fadeInDown" id="wrap" style="width: 5000px;">
+    <div class="wrapper fadeInDown" id="wrap">
         <div id="formContent">
 
-            <div class="row" style="max-width: 700px; margin: 0 auto;">
+            <div class="row" style="max-width: 800px; margin: 0 auto;">
                 <!-- Default form register -->
-                <form class="text-center " [formGroup]='signupForm' (ngSubmit)='onSubmit()'>
+                <form class="text-center " id="for" [formGroup]='signupForm' (ngSubmit)='onSubmit()'>
                     <flash-messages></flash-messages>
-                    <p class="h4 mb-4">Sign up</p>
+                    <p class="h4 mb-4" style="text-align: center; color: white;">Sign up</p>
 
                     <div class="row">
                         <div class="col-md-6">
@@ -85,11 +85,11 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <button class="btn" type="submit">SignUp</button>
+                            <button class="btn" type="submit" style="background-color: #F45D01;">SignUp</button>
                         </div>
                         <div class="col-md-6">
                             <p class="login-link">Already a member?
-                                <a routerLink="/login">Login</a>
+                                <a routerLink="/login" style="color:white">Login</a>
                             </p>
                         </div>
                     </div>

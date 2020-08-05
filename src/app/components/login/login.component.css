@@ -146,6 +146,10 @@ input[type=text]:placeholder {
     color: #cccccc;
 }
 
+::placeholder {
+    color: black;
+}
+
 
 /* ANIMATIONS */
 

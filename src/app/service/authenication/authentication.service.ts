@@ -28,6 +28,8 @@ export class AuthenticationService {
   //Helper Method (TOKENS)
   setToken(token: string) {
     localStorage.setItem('token', token);
+    console.log('token');
+    
   };
 
   getToken() {

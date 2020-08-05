@@ -73,6 +73,7 @@ export class SignupComponent implements OnInit {
               'Something went wrong, Please contact the admin'
             );
           }
+          console.log(err.error);
         }
       );
     }

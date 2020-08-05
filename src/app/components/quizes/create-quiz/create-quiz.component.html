@@ -1,13 +1,73 @@
-<div>
-    <legend>Set Question</legend>
-    <label>Question :</label>
-    <textarea placeholder="The Question" id="" cols="30" rows="10" [formControl]='question'></textarea>
-</div>
-<div>
-    <legend>Set Answers</legend>
-    <input type="text" placeholder="Answer" class="form-control" [formControl]='answer1'><br>
-    <input type="text" placeholder="Answer" class="form-control" [formControl]='answer2'><br>
-    <input type="text" placeholder="Answer" class="form-control" [formControl]='answer3'><br>
-    <input type="text" placeholder="Answer" class="form-control" [formControl]='answer4'><br>
-    <input type="text" placeholder="Answer" class="form-control" [formControl]='answer5'><br>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container" id="dashboard">
+    <div class="area"></div>
+    <nav class="main-menu">
+        <ul>
+
+            <li class="has-subnav">
+                <a href="#home">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        Home
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a routerLink="/dashboard">
+                    <i class="fa fa-dashboard fa-2x"></i>
+                    <span class="nav-text">
+                        Dashboard
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a routerLink="/create-quiz">
+                    <i class="fa fa-edit fa-2x"></i>
+                    <span class="nav-text">
+                        Create Test
+                    </span>
+                </a>
+
+            </li>
+            <li class="has-subnav">
+                <a routerLink="/user">
+                    <i class="fa fa-user fa-2x"></i>
+                    <span class="nav-text">
+                        Profile
+                    </span>
+                </a>
+
+            </li>
+
+        </ul>
+
+        <ul class="logout">
+            <li>
+                <a routerLink="/login">
+                    <i class="fa fa-power-off fa-2x"></i>
+                    <span class="nav-text">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <legend>Set Question</legend>
+        <label>Question :</label>
+        <textarea placeholder="The Question" id="" cols="30" rows="10" [formControl]='questions'></textarea>
+    </div>
+    <div>
+        <legend>Set Answers</legend>
+        <input type="text" placeholder="Title" class="form-control" [formControl]='title'><br>
+        <input type="text" placeholder="Description" class="form-control" [formControl]='description'><br>
+        <input type="text" placeholder="Duration" class="form-control" [formControl]='duration'><br>
+        <input type="text" placeholder="Questions" class="form-control" [formControl]='questions'><br>
+
+    </div>
 </div>
